@@ -11,7 +11,7 @@ version 0.15.1.
 
 ##Install dependencies
 
-`npm install && bower install
+`npm install && bower install`
 
 ## Build & development
 
