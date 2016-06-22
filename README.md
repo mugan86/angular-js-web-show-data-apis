@@ -7,11 +7,11 @@ version 0.15.1.
 
 ### Clone repo: 
 
-`git clone https://github.com/mugan86/angular-js-web-show-data-apis.git
+`git clone https://github.com/mugan86/angular-js-web-show-data-apis.git`
 
 ##Install dependencies
 
-`npm install && bower install`
+`npm install && bower install
 
 ## Build & development
 
