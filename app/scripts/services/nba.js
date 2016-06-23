@@ -5,18 +5,8 @@ angular.module('apisApp')
     return {
       getHistoryROYList: function() 
       {
-
         var url = 'files/nba_history_roy.csv';
-        
-
-        return $http.get(url).success(
-
-            function(resp){
-              
-
-                return resp;
-            }
-        );
+        return $http.get(url).success( function(resp){ return resp; });
       },
       
     };
