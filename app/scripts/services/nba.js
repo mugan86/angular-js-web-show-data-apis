@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('apisApp')
+angular.module('documentsApp')
   .service('nbaInfoService', function nbaInfoService($http) {
     return {
       getHistoryROYList: function() 

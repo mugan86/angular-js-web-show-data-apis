@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('apisApp')
+angular.module('documentsApp')
   .service('mountainsInfoService', function mountainsInfoService($http) {
     return {
       getList: function() 

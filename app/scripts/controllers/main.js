@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of the documentsApp
  */
-angular.module('apisApp')
+angular.module('documentsApp')
   .controller('MainCtrl', function (serviraceAPIService, nbaInfoService, $scope, WIKIPEDIA_MOBILE_WIKI_URL, mountainsInfoService, MENDIKAT) {
     this.awesomeThings = [
       'HTML5 Boilerplate',

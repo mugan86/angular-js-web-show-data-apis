@@ -7,7 +7,7 @@
  * # AboutCtrl
  * Controller of the documentsApp
  */
-angular.module('apisApp')
+angular.module('documentsApp')
   .controller('AboutCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',

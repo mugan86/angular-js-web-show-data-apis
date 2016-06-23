@@ -4,7 +4,7 @@ Constant values files
 
 
 ***********************************************************************************************/
-angular.module('apisApp')
+angular.module('documentsApp')
 
 .constant('SERVIRACE_URL_LOCALHOST', 'http://mugan86.com/serviraces/api/v1/')
 .constant('WIKIPEDIA_MOBILE_WIKI_URL', 'https://en.m.wikipedia.org/wiki/')
