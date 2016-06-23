@@ -18,4 +18,5 @@ angular.module('apisApp')
                         main_url: 'http://restcountries.eu',
                         all: '/rest/v1/all'
                     })
+.constant('MENDIKAT', 'http://www.mendikat.net/')
 ;

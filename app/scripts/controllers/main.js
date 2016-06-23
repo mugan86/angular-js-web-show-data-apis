@@ -8,7 +8,7 @@
  * Controller of the documentsApp
  */
 angular.module('apisApp')
-  .controller('MainCtrl', function (serviraceAPIService, nbaInfoService, $scope, WIKIPEDIA_MOBILE_WIKI_URL) {
+  .controller('MainCtrl', function (serviraceAPIService, nbaInfoService, $scope, WIKIPEDIA_MOBILE_WIKI_URL, mountainsInfoService, MENDIKAT) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -41,6 +41,23 @@ angular.module('apisApp')
         for (var i = 1; i < roy_players.length; i++)
         {
           console.log(WIKIPEDIA_MOBILE_WIKI_URL+convertWikipediaFriendlySearchTerm(roy_players[i][2]));
+          
+        }
+
+      });
+
+    mountainsInfoService.getList()
+        .then(function(resp)
+        {
+        var lines = [];
+
+        //Get data from services 'nba.js' file
+        var csv_str = resp.data;
+        var roy_players = convertToArrayFromCSV(csv_str);
+
+        for (var i = 1; i < 5; i++)
+        {
+          console.log("Name: " + roy_players[i][1] + " / URL: " + MENDIKAT+roy_players[i][3]);
           
         }
 
