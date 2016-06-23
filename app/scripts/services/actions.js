@@ -22,3 +22,9 @@ function convertToArrayFromCSV(csv_str)
     }
 	return lines;
 }
+
+function convertWikipediaFriendlySearchTerm(text)
+{
+	text = text.split(' (Tie)').join('');
+	return (text.split(' ').join('_'));
+}
