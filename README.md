@@ -1,4 +1,4 @@
-# Angular JS example to get data from differents APIS
+# Angular JS Playground example to get data from differents APIS
 
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.15.1.
