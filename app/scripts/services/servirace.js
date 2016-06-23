@@ -1,12 +1,12 @@
 'use strict';
 
 angular.module('apisApp')
-  .service('serviraceAPIService', function serviraceAPIService($http) {
+  .service('serviraceAPIService', function serviraceAPIService($http, SERVIRACE_URL_LOCALHOST) {
     return {
       getNextTwoMonthsRacesData: function() 
       {
 
-        var url = 'http://mugan86.com/serviraces/api/v1/race/get/race_infov4.php';
+        var url = SERVIRACE_URL_LOCALHOST + 'race/get/race_infov4.php';
         
 
         return $http.post(url).success(
@@ -19,7 +19,7 @@ angular.module('apisApp')
       },
       getLastTrafficIncidents: function ()
       {
-        var url = 'http://mugan86.com/serviraces/api/v1/traffic/get/last_incidents.php?ports=0';
+        var url = SERVIRACE_URL_LOCALHOST+ 'traffic/get/last_incidents.php?ports=0';
         
 
         return $http.get(url).success(
