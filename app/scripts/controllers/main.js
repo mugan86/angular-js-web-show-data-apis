@@ -8,7 +8,7 @@
  * Controller of the documentsApp
  */
 angular.module('documentsApp')
-  .controller('MainCtrl', function (serviraceAPIService, nbaInfoService, $scope, WIKIPEDIA_MOBILE_WIKI_URL, mountainsInfoService, MENDIKAT) {
+  .controller('MainCtrl', function (serviraceAPIService, nbaInfoService, $scope, WIKIPEDIA_MOBILE_WIKI_URL, mountainsInfoService, MENDIKAT, $http) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -63,4 +63,10 @@ angular.module('documentsApp')
 
       });
 
+      //Get Spotify Token to playground with API
+      $http.get('http://192.168.1.3/spotify/get_spotify_api_token.php')
+      .then(function(response) {
+          console.log(response);
+      });
+    
 });
