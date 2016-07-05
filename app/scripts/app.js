@@ -25,6 +25,11 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
+      .when('/servirace', {
+        templateUrl: 'views/servirace.html',
+        controller: 'ServiraceCtrl',
+        controllerAs: 'servirace'
+      })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
