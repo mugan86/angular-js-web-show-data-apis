@@ -17,7 +17,7 @@ angular.module('documentsApp')
 
     
 
-    serviraceAPIService.getNextTwoMonthsRacesData()
+    /*serviraceAPIService.getNextTwoMonthsRacesData()
             .then(function(data) {
 
            console.log(data);
@@ -64,9 +64,9 @@ angular.module('documentsApp')
       });
 
       //Get Spotify Token to playground with API
-      $http.get('http://192.168.1.3/spotify/get_spotify_api_token.php')
+      $http.get('http://mugan86.com/spotify/get_spotify_api_token.php')
       .then(function(response) {
           console.log(response);
-      });
+      });*/
     
 });
