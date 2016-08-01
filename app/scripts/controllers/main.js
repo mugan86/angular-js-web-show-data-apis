@@ -8,14 +8,18 @@
  * Controller of the documentsApp
  */
 angular.module('documentsApp')
-  .controller('MainCtrl', function (serviraceAPIService, nbaInfoService, $scope, WIKIPEDIA_MOBILE_WIKI_URL, mountainsInfoService, MENDIKAT, $http) {
+  .controller('MainCtrl', function (serviraceAPIService, nbaInfoService, $scope, WIKIPEDIA_MOBILE_WIKI_URL, mountainsInfoService, MENDIKAT, $http, lastFMService) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
 
-    
+    lastFMService.getInfoSelectArtist("su+ta+gar", 1)
+            .then(function(data) {
+
+           console.log(data);
+    });
 
     /*serviraceAPIService.getNextTwoMonthsRacesData()
             .then(function(data) {
