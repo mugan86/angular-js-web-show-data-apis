@@ -18,5 +18,15 @@ angular.module('documentsApp')
                         main_url: 'http://restcountries.eu',
                         all: '/rest/v1/all'
                     })
+.constant('LASTFM', {
+						localhost: 'http://ws.audioscrobbler.com/2.0/?method=',
+						artist: '&artist=',
+						album: '&album=',
+						track: '&track=',
+						country: '&country',
+                        api_key: '&api_key=c1c76ca84c89905e771b8102a6d65ccb', 
+    					format_json: '&format=json'
+                    })
 .constant('MENDIKAT', 'http://www.mendikat.net/')
 ;
+
