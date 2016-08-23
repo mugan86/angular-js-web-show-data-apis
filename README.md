@@ -3,6 +3,14 @@
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.15.1.
 
+## Install NodeJS
+
+https://nodejs.org/en/
+
+## Required to install all dependencies to work with AngularJS command
+
+npm install -g grunt-cli bower yo generator-karma generator-angular
+
 ## Instructions to use this repository project
 
 ### Clone repo: 
