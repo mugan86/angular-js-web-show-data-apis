@@ -9,7 +9,7 @@ https://nodejs.org/en/
 
 ## Required to install all dependencies to work with AngularJS command
 
-`npm install -g grunt-cli bower yo generator-karma generator-angular
+`npm install -g grunt-cli bower yo generator-karma generator-angular`
 
 ## Instructions to use this repository project
 
